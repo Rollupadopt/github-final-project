@@ -50,3 +50,23 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+//Practice Task
+let person = "Employee";
+let authorized;
+let add_service;
+
+if (person === "Employee"){
+    authorized = "Dietary Services";
+    add_service = null;
+} else if (person === "Enrolled Member,") {
+    authorized = "Dietary Services";
+    add_service = "one-on-one with dietician";
+} else if (person === "Subscriber") {
+    authorized = "Dietary Services Only";
+    add_service = null;
+} else {
+    authorized = "they need to enroll or at least subscribe first to avail this facility.";
+}
+
+console.log("Hello ", person, "you can access: ",authorized,"and ", add_service);
